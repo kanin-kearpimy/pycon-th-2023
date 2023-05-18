@@ -1,0 +1,572 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+
+a,
+a:visited {
+  color: #f13a59;
+  text-decoration: none;
+}
+
+.text-primary {
+  color: #646464 !important;
+}
+
+h1 {
+  font-family: "Rubik", serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Rubik", serif;
+  font-size: 48px;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Rubik", serif;
+  font-size: 40px;
+}
+h4 {
+  font-family: "Rubik", serif;
+  font-size: 36px;
+}
+h5 {
+  font-family: "Rubik", serif;
+  font-size: 26px;
+}
+h6 {
+  font-family: "Rubik", serif;
+  font-size: 20px;
+}
+.row {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#top {
+  height: 25px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* --- images ------------- */
+#logo {
+  margin-top: 15%;
+  text-decoration: none;
+}
+
+/* text logo */
+.pyladies-logo {
+  height: 63px;
+  width: 133px;
+}
+
+@media (max-width: 400px) {
+  .pyladies-logo {
+    display: none;
+  }
+}
+
+/* Big pyladies script logo */
+#floating-logo {
+  position: absolute;
+  display: block;
+  width: 275px;
+  height: 125px;
+  top: 25%;
+  left: 50%;
+  margin-left: -136px;
+}
+
+@media (min-width: 500px) {
+  #floating-logo {
+    width: 400px;
+    height: 170px;
+    top: 25%;
+    left: 50%;
+    margin-left: -200px;
+  }
+}
+
+@media (min-width: 750px) {
+  #floating-logo {
+    width: 500px;
+    height: 250px;
+    top: 30%;
+    left: 50%;
+    margin-left: -250px;
+  }
+}
+
+/* @media only screen and (min-width: 420px) {
+	#floating-logo {
+		position: absolute;
+		display: block;
+		width: 400px;
+		height: 175px;
+		top: 15%;
+		left: 45%;
+		margin-left: -136px;
+	}
+} */
+
+#logoimage {
+  width: 27px;
+  padding-right: 10px;
+  float: left;
+}
+
+#logotitle {
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 305%;
+}
+
+#logotitle a {
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+.geek {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  padding: 0px 15px 0px 15px;
+  margin-top: -15px;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 500px) {
+  .geek {
+    margin-bottom: 15px;
+  }
+}
+
+.pygotham {
+  width: 259px;
+  height: 221px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 550px) {
+  .pygotham {
+    width: 519px;
+    height: 443px;
+  }
+}
+
+/* --- navbar ------------- */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav.navbar {
+  background-color: #ffe873;
+  color: #646464;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
+
+.navbar a {
+  font-size: 16px;
+}
+
+.section {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.row {
+  padding-bottom: 50px;
+}
+
+/* hr lines */
+
+.hr-squiggle {
+  width: 100%;
+  height: 25px;
+  margin-top: -35px;
+  margin-bottom: 25px;
+}
+
+.thick-line {
+  display: block;
+  color: black;
+  border-width: 5px;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pink {
+  margin-top: 0;
+  background-color: pink;
+  border-top: 5px solid #ffdeb4;
+  border-bottom: 5px solid #ffdeb4;
+}
+
+.skyline {
+  background-image: url("images/skyline.jpg");
+  height: 450px;
+  background-size: cover;
+}
+
+.aurimas {
+  font-size: 12px;
+  margin-left: 5px;
+  display: block;
+}
+
+@media (min-width: 750px) {
+  .skyline {
+    height: 650px;
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 1824px) {
+  .skyline {
+    height: 750px;
+  }
+}
+
+/* --- margin --- */
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 6rem !important;
+}
+
+/* --- bios ------------- */
+.bio-container {
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 75px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.organizer-container {
+  margin-bottom: 25px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1250px) {
+  .organizer-container {
+    width: 40%;
+  }
+}
+
+.organizer {
+  height: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-height: 400px;
+  align-self: auto;
+  justify-self: initial;
+  max-width: 300px;
+}
+
+.organizer.landscape {
+  max-width: 325px;
+  padding-top: 10px;
+}
+
+@media (min-width: 750px) {
+  .bio-container {
+    flex-direction: row;
+  }
+
+  .organizer.landscape {
+    max-width: 425px;
+  }
+}
+
+.bio .name {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Bitter", sans-serif;
+  margin-top: 25px;
+}
+
+.bio {
+  width: 100%;
+}
+
+@media (min-width: 1250px) {
+  .bio {
+    width: 55%;
+    text-align: left;
+  }
+  .bio .name {
+    margin-top: inherit;
+  }
+}
+
+span.fa {
+  font-size: 30px;
+}
+
+/* --- resources ----------- */
+.resource-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.resource-link p,
+.resource-link:hover {
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.resource {
+  margin-bottom: 30px;
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 25px;
+  height: 320px;
+  width: 320px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+
+.resource .p {
+  margin-bottom: 0px;
+}
+
+.resource-link .resource-title {
+  font-size: 22px;
+  color: black;
+}
+
+/* --- footer ------------- */
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #646464;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 15px;
+  background-color: #ffe873;
+}
+
+.footer p {
+  margin-bottom: 15px;
+}
+
+.footer a .fa {
+  color: #646464;
+  font-size: 22px;
+}
+
+.footer .footer-title {
+  vertical-align: 2px;
+}
+
+.small-geek {
+  background-image: url("./images/pyconTH-logo-sm.png");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.med-geek {
+  background-image: url("./images/pyconTH-logo-sm.png");
+  background-size: contain;
+  display: block;
+  margin-left: 10px;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 400px) {
+  .small-geek {
+    display: none;
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #4b8bbe;
+}
+
+/* Form button */
+.btn-secondary {
+  color: #fff;
+  background-color: antiquewhite;
+  border-color: deeppink;
+}
+
+/* schedule */
+
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px 0;
+}
+@media (min-width: 1280px) {
+  .schedule-container {
+    flex-direction: row;
+  }
+}
+.schedule-column {
+  width: 100%;
+  margin: 2px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.title-schedule {
+  font-family: "Rubik";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.image-schedule {
+  text-align: center;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 3.7rem;
+    line-height: 4.5rem;
+  }
+
+  .schedule-column {
+    width: 33%;
+  }
+}
+
+.schedule-card {
+  background: white;
+  padding: 38px 36px;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+.schedule-card h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #0e1c4e;
+  margin-bottom: 20px;
+}
+.schedule-card details {
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.05);
+  border-left: 5px solid gray;
+}
+.schedule-card details:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+.schedule-card details.schedule-contents-bkk {
+  background: #fff8fd;
+  border-left: 5px solid #bf3f97;
+}
+.schedule-card details.schedule-contents-hh {
+  background: #fafaff;
+  border-left: 5px solid #5785c4;
+}
+.schedule-card details.schedule-contents-chi {
+  background: #f1fbfd;
+  border-left: 5px solid #6ccbdd;
+}
+.schedule-card details summary,
+.schedule-card details p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #0e1c4e;
+}
+.schedule-card details summary:not(:last-of-type),
+.schedule-card details p:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+.schedule-card details p {
+  padding-left: 30px;
+}
+.schedule-card details summary {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.schedule-card details summary::-webkit-details-marker {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.6066 12H1.3934' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 1.39343V22.6066' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  color: transparent;
+  background-size: 100% 100%;
+  margin-right: 18px;
+  width: 16px;
+  height: 16px;
+  transform: translateY(2px);
+}
+.schedule-card details[open] summary {
+  margin-bottom: 10px;
+  list-style-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.5 16.5L1.5 1.5' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.5 1.5L1.5 16.5' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  font-weight: 700;
+}
+.schedule-card details[open] summary::-webkit-details-marker {
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.5 16.5L1.5 1.5' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.5 1.5L1.5 16.5' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  color: transparent;
+  background-size: 100% 100%;
+  margin-right: 20px;
+  width: 12px;
+  height: 12px;
+  transform: translateY(1px);
+}
+.schedule-card details[open] p {
+  padding-left: 32px;
+}
